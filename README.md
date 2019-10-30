@@ -55,3 +55,5 @@ Similar projects that could be a point of inspiration:
 
 - [krasimir/webpack-library-starter](https://github.com/krasimir/webpack-library-starter)
 
+# frontend-cheatsheet-playground
+typescript...
