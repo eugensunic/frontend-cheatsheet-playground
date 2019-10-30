@@ -1,4 +1,5 @@
-import { Greeter } from './greeter';
 
-const g = new Greeter('Juri');
-g.greet();
+import Promises from './promise';
+
+const promises = new Promises();
+promises.promise0();
