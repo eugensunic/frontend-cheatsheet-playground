@@ -1,0 +1,15 @@
+- set, get keywords,
+- key value pair notation
+- partial
+- records
+- promise<result> or wrapper<result>
+- functions callbacks
+- enums
+- interfaces vs types
+- & and | operators
+- extends
+- default values like in a reducer names:string[]=[]
+- optional params ?
+- does order of params matter
+- T generic things
+- class vs interfaces 

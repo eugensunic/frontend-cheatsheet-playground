@@ -1,4 +1,4 @@
-import Promises from './promise';
+import Promises from './typescript-examples/promise';
 
 describe('Promises', () => {
   it('should greet', () => {
