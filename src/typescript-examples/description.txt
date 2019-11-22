@@ -12,4 +12,5 @@
 - optional params ?
 - does order of params matter
 - T generic things
-- class vs interfaces 
+- class vs interfaces,
+- pick
