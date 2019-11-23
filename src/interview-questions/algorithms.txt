@@ -1,0 +1,9 @@
+Algorithms
+----------
+- find max rectangle in 2D matrix (search on stack, dynamic programming)
+test against these inputs:
+1. For input ["1111", "1101", "1111", "0111"] The correct output is 6
+2. For input ["01001", "11111", "01011", "11011"]  The correct output is 6
+3. For input ["101101", "111111", "010111", "111111"]  The correct output is 9
+4. For input ["101101", "111111", "011111", "111111", "001111", "011111"] The correct output is 20
+
