@@ -7,3 +7,4 @@
 - SOAP vs REST main difference
 - how to send big data using POST requests (max size is around 2mb) also send multiple requests
 - what is the purpose of HTML5 elements (footer, header, nav, aside, article)
+- functional programming explain, pros and cons
