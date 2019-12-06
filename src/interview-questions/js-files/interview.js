@@ -171,3 +171,32 @@ console.log(minIntegerOutsideList(arr1));
 console.log(minIntegerOutsideList(arr2));
 console.log(minIntegerOutsideList(arr3));
 console.log(minIntegerOutsideList(arr4));
+
+
+// COMPLEX SORT  
+const arr = [{
+  a: 1,
+  b: 5
+}, {
+  a: 2,
+  b: 6
+}, {
+  a: 3,
+  b: 5
+}]
+
+function complexSort(arr, key, orderBy) {
+  return arr.sort((x, y) => {
+    const flag = orderBy === 'ASC' ? -1 : 1;
+    if (x[key] < y[key]) {
+      return flag;
+    } else if (x[key] > y[key]) {
+      return flag * -1
+    }
+    return 0
+  })
+}
+
+
+console.log(complexSort(arr, 'b', 'DESC'));
+
