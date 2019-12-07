@@ -29,3 +29,64 @@ function findWord(sentence, searchWord) {
   }
   return false;
 }
+
+// Print n random equations where the sum of the two numbers are less than given sum
+function printNRandomEquations(n, maxSum) {
+  let cnt = 1;
+  let x,
+    y = 0;
+  let arr = [];
+
+  while (cnt != n + 1) {
+    x = Math.round(Math.random() * 10);
+    y = Math.round(Math.random() * 10);
+    if (x + y < maxSum) {
+      cnt++;
+      const stringExpression = `problem ${cnt - 1}: ${x} + ${y} =`;
+      arr.push(stringExpression);
+    }
+  }
+  return arr;
+}
+
+// Sum all the borders from a squared array
+// const arr = [
+//   [1, 2, 3, 4],
+//   [1, 1, 1, 1],
+//   [1, 1, 1, 1],
+//   [1, 2, 3, 4]
+// ];
+
+function sumBordersOf2DArr(arr) {
+  let sumOtherRows = 0;
+  for (let i = 1; i < arr.length - 1; i++) {
+    sumOtherRows += arr[i][0] + arr[i][arr[i].length - 1];
+  }
+
+  const sumFirstRow = arr[0].reduce((acc, x) => acc + x, 0);
+  const sumLastRow = arr[arr.length - 1].reduce((acc, x) => acc + x, 0);
+
+  return sumFirstRow + sumLastRow + sumOtherRows;
+}
+
+//implement your own reduce --> reduce1
+Array.prototype.reduce1 = function(fn, initValue) {
+  let acc = initValue;
+
+  for (let i = 0; i < this.length; i++) {
+    acc = fn(acc, this[i]);
+  }
+  return acc;
+};
+
+const result = [1, 2, 3].reduce1((acc, x) => acc + x, 0);
+
+// multiple closures example in js
+function outerFunc(arg) {
+  return function(arg1) {
+    return function(arg2) {
+      return arg2 * 2 + arg1 + arg;
+    };
+  };
+}
+console.log(outerFunc(1)(2)(3));
