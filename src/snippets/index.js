@@ -90,3 +90,26 @@ function outerFunc(arg) {
   };
 }
 console.log(outerFunc(1)(2)(3));
+
+// example of caching promises
+promise1 = new Promise((res, rej) => {
+  setTimeout(_ => res('result'), 2000);
+});
+
+function outer() {
+  let cache = null;
+  return function() {
+    console.log('cache', cache);
+    if (!cache) {
+      return promise1.then(x => (cache = x));
+    }
+    return Promise.resolve(cache);
+  };
+}
+
+const func = outer();
+
+console.log(func().then(x => console.log(x)));
+
+// proof that cache variable is filled with a value
+setTimeout(_ => func().then(x => console.log(x)), 4000);
