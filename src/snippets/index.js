@@ -113,3 +113,37 @@ console.log(func().then(x => console.log(x)));
 
 // proof that cache variable is filled with a value
 setTimeout(_ => func().then(x => console.log(x)), 4000);
+
+
+// isPalindrome mathematical solution (no strings, arrays)
+function isPalindrome(num) {
+  let cnt = 0;
+  let numCopy = num;
+
+  // find number length
+  while (numCopy > 1) {
+    numCopy = numCopy / 10;
+    ++cnt;
+  }
+
+  // check first and n+i and len-i
+  let numCopy2 = num;
+  let x = Math.pow(10, cnt - 1);
+  while (x > 1) {
+    numCopy2 = numCopy2 / x;
+
+    leftDigit = Math.floor(numCopy2);
+    rightDigit = num % 10;
+
+    if (leftDigit !== rightDigit) {
+      return false;
+    }
+
+    numCopy2 = (numCopy2 * x) % x;
+    num = Math.round(num / 10);
+    x = x / 10;
+  }
+  return true;
+}
+
+console.log(isPalindrome(100001));
