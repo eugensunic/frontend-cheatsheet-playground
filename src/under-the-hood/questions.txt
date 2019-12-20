@@ -1,0 +1,25 @@
+1. event bubbling event capturing, stopPropagation, stopImmediatePropagation
+2. promises, (race, all, async-await, then, allSettled, reject, resolve)
+3. this, call, bind, apply
+4. closures
+5. function hoisting, variable hoisting
+6. prototype methods vs adding methods to class
+7. deep copy vs shallow copy
+8. lexical scope
+9. callback functions
+10. singleton in js 
+11. memoization/caching
+13. functions arguments param
+14. function statement vs function expression
+15. coercion
+16. currying
+17. typeof vs instanceof
+18. dynamically vs statical typed language
+19. promises vs api priority
+20. let and const declaration are not hoisted (temporal dead zone)
+21. difference between pointer and reference
+22. function arguments pass by value pass by reference
+23. stack vs heap in JavaScript
+
+
+
