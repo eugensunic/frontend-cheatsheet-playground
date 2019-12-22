@@ -30,5 +30,9 @@
 29. write your own reduce, map, filter function (Array.prototype)
    answer: https://jsfiddle.net/eugensunic/wqxm21kv/ 
 
+30. Explain JS "time to completion" (Code after Promise.resolve or res.end() will it 
+continue executing, what's is the only way to stop execution)
+31. Prototype method vs class method (attaching  method to class)
+
 
 
