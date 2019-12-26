@@ -9,21 +9,25 @@
 7. deep copy vs shallow copy
 8. lexical scope
 9. callback functions
-10. singleton in js 
+10. singleton and dependency injection create example
 11. memoization/caching
 13. functions arguments param
-14. function statement vs function expression
-15. coercion
+14. function statement/declaration vs function expression
+ answer: function declaration hoists whereas function expression is an anynymous function stored in a varaible which does not hoist
+ main thing is hoisting here
+15. coercion:
+  when using == one of the values will be converted to the equivalent of the other
 16. currying
 17. typeof vs instanceof
 18. dynamically/loosly vs statical typed language
-19. promises vs api priority
+19. promises vs api priority 2 different queues (micro and macro queue)
 20. let and const declaration are not hoisted (temporal dead zone)
 21. difference between pointer and reference
 22. function arguments pass by value pass by reference
 23. stack vs heap in JavaScript (everything is stored on the heap)
-24. coalescing
+24. coalescing means merging
 25. imperative, declarative, functional
+ answer: functional is declarative, imperative is mutational
 26. Garbage collector in Js
 27. How to deep copy an object of unknown/uncertain depth
 28. eval, strict
@@ -33,6 +37,10 @@
 30. Explain JS "time to completion" (Code after Promise.resolve or res.end() will it 
 continue executing, what's is the only way to stop execution)
 31. Prototype method vs class method (attaching  method to class)
+32. Dinamically vs staticaly typed
+33. loosly vs strongly typed 
+34. pure vs impure functions
+35 how do stack calls work with closures how is the outer function always available
 
 
 

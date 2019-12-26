@@ -21,7 +21,7 @@ Array.prototype.customFilter = function(callback) {
 Array.prototype.customReduce = function(callback, initValue) {
   const reduce = null;
   for (let i = 0; i < this.length; i++) {
-    reuuce = cabllack(initValue, this[i]);
+    reduce = callback(initValue, this[i]);
   }
   return reduce;
 };
